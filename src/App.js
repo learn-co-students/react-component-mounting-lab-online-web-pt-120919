@@ -46,7 +46,7 @@ class App extends Component {
   // removeTimer updates state, removing any timer that matches the provided author
   removeTimer = id => {
     this.setState(prevState => ({
-      timerIDs: prevState.timerIDs.filter(timer_id => timer_id !== id)
+      timerIDs: prevState.timerIDs.filter(timer_id => timer_id !== id) // show id before current id and sets state to previous id.
     }))
   }
 
